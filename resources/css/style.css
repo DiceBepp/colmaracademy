@@ -1,0 +1,423 @@
+/* Universal Styles */
+
+html {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  color: #4c4c4c;
+}
+
+h1 {
+  font-size: 44px;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+h4 {
+  font-size: 18px;
+}
+
+/* Header */
+
+.header {
+  height: 64px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 24px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  margin-left: 24px;
+}
+
+.logo img {
+  height: 48px;
+}
+
+#colmar {
+  font-weight: bold;
+}
+
+#academy {
+  color: #bfbfbf;
+}
+
+nav ul {
+  display: flex;
+  margin-right: 8px;
+  font-size: 20px;
+}
+
+.desktop li {
+  margin-right: 16px;
+}
+
+.mobile {
+  display: none;
+}
+
+@media screen and (max-width: 480px) {
+  .mobile {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 32px;
+    margin: 16px 32px;
+  }
+  .mobile img {
+    height: 32px;
+  }
+  .logo {
+    display: none;
+  }
+  nav ul {
+    display: none;
+  }
+}
+
+/* banner */
+
+.banner {
+  background-color: #bebebe;  /* to-be-considered*/
+  width: 100%;
+  display: flex;
+}
+
+.banner img {
+  width: 60%;
+  height: auto;
+  margin: 32px 24px;
+}
+
+.title {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.title h1 {
+  line-height: 64px;
+  margin-bottom: 32px;
+}
+
+.title h3 {
+  line-height: 48px;
+  margin-bottom: 32px;
+}
+
+.button {
+  background-color: #656464;
+  color: white;
+  text-align: center;
+  width: 100%;
+}
+
+.button p {
+  margin: 8px auto;
+  line-height: 24px;
+}
+
+.button a {
+  color: #ffffff;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 480px) {
+  .banner {
+    flex-direction: column;
+  }
+  .banner img {
+    width: 100%;
+    margin: 0;
+  }
+  .title {
+    width: 90%;
+    margin: 32px 16px;
+  }
+  .title h3 {
+    margin-bottom: 24px;
+  }
+  .button a {
+    font-weight: bold;
+  }
+}
+
+/* about */
+
+.about {
+  display: flex;
+  background-color: #ededed;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  margin: 32px 24px;
+  width: 60%;
+}
+
+.main img {
+  width: 100%;
+  height: auto;
+}
+
+.main h2 {
+  margin-top: 32px;
+  margin-bottom: 24px;
+}
+
+.main p {
+  font-size: 16px;
+  font-family: arial;
+  margin-top: 32px;
+}
+
+.info {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 16px;
+}
+
+.program {
+  border-left: 1px solid #bebebe;  /* to-be-considered*/
+}
+
+.container {
+  display: flex;
+}
+
+.square {
+  width: 35%;
+  height: auto;
+  margin: 16px;
+  float: left;
+}
+
+.rectangle {
+  display: none;
+}
+
+.description {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.description h3 {
+  margin-bottom: 8px;
+}
+
+.description h4 {
+  margin-bottom: 8px;
+}
+
+.description a {
+  color: #87cefa;
+}
+
+.orientation {
+  border-bottom: 1px solid #bebebe;  /* to-be-considered*/
+}
+.guest {
+  background-color: #bebebe;  /* to-be-considered*/
+}
+
+@media screen and (max-width: 480px) {
+  .about {
+    border-bottom: 1px solid #bebebe;  /* to-be-considered*/
+  }
+  .main {
+    display: none;
+  }
+  .info {
+    width: 100%;
+    border-left: none;
+    margin: 16px;
+  }
+  .container {
+    border-bottom: none;
+    flex-direction: column;
+  }
+  .square {
+    display: none;
+  }
+  .rectangle {
+    display: block;
+    width: 100%;
+  }
+  .description {
+    width: 90%;
+    margin: 16px;
+    line-height: 24px;
+  }
+  .guest {
+    background-color: #ededed;
+  }
+}
+
+/* lerning */
+
+.learning {
+  background-color: #bebebe;  /* to-be-considered*/
+  border-bottom: 1px solid #bebebe;  /* to-be-considered*/
+}
+
+.learning h2 {
+  text-align: center;
+  padding-top: 32px;
+}
+
+.catalog {
+  margin: 32px 72px 0 72px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.course {
+  background-color: #ffffff;
+  width: 31%;
+  margin-bottom: 32px;
+}
+
+.course img {
+  width: 100%;
+  height: auto;
+}
+
+.menu {
+  height: 130px;
+  margin: 16px;
+  line-height: 24px;
+}
+
+#line {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+@media screen and (max-width: 480px) {
+  .learning {
+    background-color: #ededed;
+  }
+  .catalog {
+    margin: 32px 16px 24px 16px;
+    flex-direction: column;
+  }
+  .course {
+    background-color: #bebebe;  /* to-be-considered*/
+    width: 100%;
+    margin-bottom: 8px;
+  }
+  .course img {
+    display: none;
+  }
+  .menu {
+    height: auto;
+    margin: 24px 16px;
+  }
+  .menu h4 {
+    display: none;
+  }
+}
+
+/* portfolio */
+
+.portfolio {
+  background-color: #ededed;
+}
+
+.portfolio h2 {
+  text-align: center;
+  padding-top: 32px;
+}
+
+.examples {
+  display: flex;
+}
+
+.reimagine {
+  display: flex;
+  flex-direction: column;
+  margin: 32px 24px;
+  width: 60%;
+}
+
+.reimagine video {
+  width: 100%;
+}
+
+.reimagine h3 {
+  margin-top: 24px;
+  margin-bottom: 8px;
+}
+
+.thesis {
+  margin-top: 32px;
+}
+
+.fisma {
+    background-color: #bebebe;  /* to-be-considered*/
+}
+
+@media screen and (max-width: 480px) {
+  .reimagine {
+    width: 100%;
+    margin: 32px auto;
+  }
+  .reimagine h3 {
+    display: none;
+  }
+  .reimagine h4 {
+    display: none;
+  }
+  .thesis {
+    display: none;
+  }
+}
+
+/* footer */
+
+footer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid #bebebe;  /* to-be-considered*/
+  background-color: #ededed;
+}
+
+footer span {
+  margin: 16px 24px;
+}
+
+.tsandcs span {
+  margin-right: 16px;
+}
+
+@media screen and (max-width: 480px) {
+  footer {
+    border-top: none;
+  }
+  .tsandcs {
+    display: none;
+  }
+}

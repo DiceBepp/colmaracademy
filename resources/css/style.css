@@ -23,13 +23,13 @@ h3 {
 
 h4 {
   font-size: 18px;
+  line-height: 22px;
 }
 
 /* Header */
 
 .header {
   height: 64px;
-  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -66,6 +66,10 @@ nav ul {
   margin-right: 16px;
 }
 
+li a {
+  color: #4c4c4c;
+}
+
 .mobile {
   display: none;
 }
@@ -92,8 +96,7 @@ nav ul {
 /* banner */
 
 .banner {
-  background-color: #d9d9d9;  /* to-be-considered*/
-  width: 100%;
+  background-color: #d9d9d9;
   display: flex;
 }
 
@@ -112,30 +115,31 @@ nav ul {
 }
 
 .title h1 {
-  line-height: 64px;
-  margin-bottom: 32px;
-}
-
-.title h3 {
   line-height: 48px;
   margin-bottom: 32px;
 }
 
+.title h3 {
+  line-height: 32px;
+  margin-bottom: 32px;
+}
+
 .button {
-  background-color: #656464;
-  color: white;
-  text-align: center;
   width: 100%;
 }
 
-.button p {
-  margin: 8px auto;
-  line-height: 24px;
+.button a {
+  text-align: center;
+  color: #4c4c4c;
+  background-color: #ffffff;
+  font-size: 20px;
+  padding: 16px;
+  display: block;
 }
 
-.button a {
+.button a:hover {
+  background-color: #656464;
   color: #ffffff;
-  font-size: 20px;
 }
 
 @media screen and (max-width: 480px) {
@@ -196,7 +200,7 @@ nav ul {
 }
 
 .program {
-  border-left: 1px solid #d9d9d9;  /* to-be-considered*/
+  border-left: 1px solid #d9d9d9;
 }
 
 .container {
@@ -207,7 +211,6 @@ nav ul {
   width: 35%;
   height: auto;
   margin: 16px;
-  float: left;
 }
 
 .rectangle {
@@ -234,15 +237,15 @@ nav ul {
 }
 
 .orientation {
-  border-bottom: 1px solid #d9d9d9;  /* to-be-considered*/
+  border-bottom: 1px solid #d9d9d9;
 }
 .guest {
-  background-color: #d9d9d9;  /* to-be-considered*/
+  background-color: #d9d9d9;
 }
 
 @media screen and (max-width: 480px) {
   .about {
-    border-bottom: 1px solid #d9d9d9;  /* to-be-considered*/
+    border-bottom: 1px solid #d9d9d9;
   }
   .main {
     display: none;
@@ -276,8 +279,8 @@ nav ul {
 /* lerning */
 
 .learning {
-  background-color: #d9d9d9;  /* to-be-considered*/
-  border-bottom: 1px solid #d9d9d9;  /* to-be-considered*/
+  background-color: #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
 }
 
 .learning h2 {
@@ -306,7 +309,6 @@ nav ul {
 .menu {
   height: 150px;
   margin: 16px;
-  line-height: 24px;
 }
 
 #line {
@@ -316,14 +318,14 @@ nav ul {
 
 @media screen and (max-width: 480px) {
   .learning {
-    background-color: #d9d9d9;
+    background-color: #ededed;
   }
   .catalog {
     margin: 32px 16px 24px 16px;
     flex-direction: column;
   }
   .course {
-    background-color: #d9d9d9;  /* to-be-considered*/
+    background-color: #d9d9d9;
     width: 100%;
     margin-bottom: 8px;
   }
@@ -375,7 +377,7 @@ nav ul {
 }
 
 .fisma {
-    background-color: #d9d9d9;  /* to-be-considered*/
+    background-color: #d9d9d9;
 }
 
 @media screen and (max-width: 480px) {
@@ -401,7 +403,7 @@ footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-top: 1px solid #d9d9d9;  /* to-be-considered*/
+  border-top: 1px solid #d9d9d9;
   background-color: #ededed;
 }
 
